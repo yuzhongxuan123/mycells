@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>俄罗斯方块</title>
+    <!--从 Google Font 导入字体 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;400;900&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Russiacubes.css">
+</head>
+<title id>Tetris Challenge</title>
+
+<body>
+    <h2>俄罗斯方块</h2>
+
+    <div>
+        <canvas id="tetris" width="240" height="400">
+    </div>
+
+    <div id="button-container">
+        <!--操作说明的按钮 -->
+        <button id="instructions">操作说明</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="instruct-text">⬅️ ➡️ 左右键<br>左右移动方块<br><br>
+                    ⬇️ 下键<br>加速方块掉落<br><br>
+                    ⬆ 上键<br>旋转方块
+                </p>
+            </div>
+        </div>
+        <button id="start">开始</button>
+        <button id="reset">重新开始</button>
+        <p>得分 <span id="score">0</span></p>
+    </div>
+    <script src="./js/tool.js"></script>
+    <script src="js/Russiacubes.js"></script>
+
+</body>
+
+</html>
